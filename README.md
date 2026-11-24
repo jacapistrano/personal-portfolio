@@ -8,10 +8,9 @@ A responsive portfolio built with React, Vite, Tailwind CSS v4, and Lucide React
 - Visual Studio Code (recommended)
 
 ## Run locally
-1. Extract the ZIP file.
-2. Open the `personal_portfolio` folder in VS Code.
-3. Open the integrated terminal.
-4. Install packages:
+1. Open the `personal_portfolio` folder in VS Code.
+2. Open the integrated terminal.
+3. Install packages:
 
    ```bash
    npm install
