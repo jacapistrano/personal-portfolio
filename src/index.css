@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --color-ink: #080d12;
+  --color-panel: #101922;
+  --color-mint: #70e2c6;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; min-width: 320px; background: #080d12; font-family: "DM Sans", sans-serif; }
+::selection { background: #70e2c6; color: #07110f; }
+.font-display { font-family: "Space Grotesk", sans-serif; }
+.section-grid {
+  background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
