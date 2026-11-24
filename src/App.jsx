@@ -1,50 +1,15 @@
 import { useState } from "react";
 import {
   ArrowDownRight, ArrowUpRight, Menu, X, Github, Linkedin, Mail,
-  MonitorSmartphone, Smartphone, PanelsTopLeft, Code2, Layers3,
-  ExternalLink, Sparkles
+  MonitorSmartphone, Smartphone, ExternalLink, Sparkles
 } from "lucide-react";
 
 import ProjectCard from "./components/ProjectCard.jsx";
 import SkillCard from "./components/SkillCard.jsx";
+import { skills, projects } from "./assets/descriptions.js";
 
 const navItems = ["About", "Skills", "Projects", "Contact"];
 
-const skills = [
-  { icon: PanelsTopLeft, name: "Front-End Development", description: "Building responsive, accessible, and user-friendly web interfaces." },
-  { icon: MonitorSmartphone, name: "Responsive Web Design", description: "Creating layouts that adapt smoothly across desktop, tablet, and mobile." },
-  { icon: Smartphone, name: "Mobile-First UI", description: "Designing clear and intuitive experiences for smaller screens first." },
-  { icon: Code2, name: "React Development", description: "Developing reusable components and interactive user interfaces with React." },
-  { icon: Layers3, name: "UI Implementation", description: "Turning design concepts into consistent layouts and reusable components." },
-  { icon: Sparkles, name: "Modern CSS & Tailwind", description: "Styling interfaces with utility-first CSS, clean structure, and maintainable patterns." },
-];
-
-const projects = [
-  {
-    number: "01", category: "WEB APPLICATION", title: "Responsive Website",
-    description: "A responsive website concept focused on clear content hierarchy, intuitive navigation, and a consistent experience across screen sizes.",
-    stack: ["React", "Tailwind CSS", "JavaScript"],
-    accent: "from-cyan-400/20 to-blue-500/5",
-    icon: PanelsTopLeft,
-    link: ""
-  },
-  {
-    number: "02", category: "MOBILE-FIRST DESIGN", title: "Mobile Interface Concept",
-    description: "A mobile-first interface concept with simplified navigation, readable typography, and touch-friendly interactive elements.",
-    stack: ["React", "Tailwind CSS", "Responsive UI"],
-    accent: "from-violet-400/20 to-fuchsia-500/5",
-    icon: Smartphone,
-    link: ""
-  },
-  {
-    number: "03", category: "FRONT-END PROJECT", title: "Interactive Web UI",
-    description: "A component-based front-end project demonstrating reusable UI elements, interactive states, and structured page layouts.",
-    stack: ["React", "JavaScript", "Tailwind CSS"],
-    accent: "from-emerald-400/20 to-teal-500/5",
-    icon: Code2,
-    link: ""
-  },
-];
 
 function SectionTitle({ label, title, text }) {
   return (
@@ -85,18 +50,18 @@ export default function App() {
               </div>
               <p className="text-sm font-medium tracking-wide text-slate-400">HELLO, I’M JOHN AMIEL CAPISTRANO</p>
               <h1 className="mt-5 max-w-3xl font-display text-5xl font-semibold leading-[1.06] tracking-[-.06em] text-white sm:text-6xl lg:text-7xl">
-                I build for the <span className="text-mint">web.</span><br />
+                I build for the <span className="text-mint">web and mobile.</span><br />
                 I design for <span className="text-mint">people.</span>
               </h1>
               <p className="mt-7 max-w-xl text-base leading-8 text-slate-400">
-                I’m an IT professional focused on front-end development, responsive websites, and mobile-friendly interfaces. I enjoy turning ideas into clean, functional, and engaging digital experiences.
+                I’m an IT professional focused on front-end development, responsive websites, mobile applications, and mobile-friendly interfaces. I enjoy turning ideas into clean, functional, and engaging digital experiences.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <a href="#projects" className="inline-flex items-center gap-3 rounded-lg bg-mint px-5 py-3.5 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-white">Explore my work <ArrowUpRight size={17} /></a>
                 <a href="#contact" className="inline-flex items-center gap-3 rounded-lg border border-white/15 px-5 py-3.5 text-sm font-semibold text-white transition hover:border-mint/50 hover:text-mint">Contact me <Mail size={16} /></a>
               </div>
               <div className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-[10px] font-semibold tracking-[.16em] text-slate-500">
-                <span>REACT.JS</span><span>TAILWIND CSS</span><span>JAVASCRIPT</span><span>RESPONSIVE UI</span>
+                <span>REACT.JS</span><span>REACT NATIVE</span><span>TAILWIND CSS</span><span>JAVASCRIPT</span><span>RESPONSIVE UI</span>
               </div>
             </div>
 
@@ -162,7 +127,7 @@ export default function App() {
               <div className="mt-9 flex shrink-0 flex-col items-start gap-5 lg:mt-0">
                 {/* Replace the sample email and social URLs with your own before publishing. */}
                 <a href="mailto:j.a.capistrano@gmail.com" className="inline-flex items-center gap-3 rounded-lg bg-mint px-5 py-3.5 text-sm font-bold text-ink transition hover:bg-white">Let’s connect <ArrowUpRight size={17} /></a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 text-sm text-slate-300 transition hover:text-mint"><Github size={18} /> GitHub <ExternalLink size={13} /></a>
+                <a href="https://github.com/jacapistrano" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 text-sm text-slate-300 transition hover:text-mint"><Github size={18} /> GitHub <ExternalLink size={13} /></a>
                 <a href="https://www.linkedin.com/in/john-amiel-capistrano-aa3b0012a/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 text-sm text-slate-300 transition hover:text-mint"><Linkedin size={18} /> LinkedIn <ExternalLink size={13} /></a>
               </div>
             </div>
