@@ -33,16 +33,6 @@ npm run build
 
 Vite creates the production-ready website in the `dist` folder.
 
-## Customize before publishing
-Edit `src/App.jsx`:
-- Replace `your.email@example.com` with your professional email.
-- Replace the GitHub and LinkedIn links with your profiles.
-- Update the project cards with projects you personally built.
-- Add live demo and GitHub repository URLs to each project.
-- Add screenshots or preview images for your real work.
-
-The project cards are starter content. Do not present them as completed client projects unless you have built them.
-
 ## Tailwind CSS
 Tailwind CSS v4 is configured through `@tailwindcss/vite` in `vite.config.js` and imported in `src/index.css`.
 
