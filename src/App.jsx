@@ -44,14 +44,6 @@ const projects = [
     icon: Code2,
     link: ""
   },
-  {
-    number: "03", category: "FRONT-END PROJECT", title: "Interactive Web UI",
-    description: "A component-based front-end project demonstrating reusable UI elements, interactive states, and structured page layouts.",
-    stack: ["React", "JavaScript", "Tailwind CSS"],
-    accent: "from-emerald-400/20 to-teal-500/5",
-    icon: Code2,
-    link: ""
-  },
 ];
 
 function SectionTitle({ label, title, text }) {
