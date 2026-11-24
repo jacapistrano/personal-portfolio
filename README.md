@@ -9,7 +9,7 @@ A responsive portfolio built with React, Vite, Tailwind CSS v4, and Lucide React
 
 ## Run locally
 1. Extract the ZIP file.
-2. Open the `john_amiel_frontend_portfolio` folder in VS Code.
+2. Open the `personal_portfolio` folder in VS Code.
 3. Open the integrated terminal.
 4. Install packages:
 
