@@ -4,11 +4,15 @@ import {
   MonitorSmartphone, Smartphone, ExternalLink, Sparkles
 } from "lucide-react";
 
+import profilepic from './assets/images/ProfileImage.png';
+
 import ProjectCard from "./components/ProjectCard.jsx";
 import SkillCard from "./components/SkillCard.jsx";
+import ExperienceSection from "./components/ExperienceSection.jsx";
 import { skills, projects } from "./assets/descriptions.js";
 
-const navItems = ["About", "Skills", "Projects", "Contact"];
+
+const navItems = ["About", "Skills", "Experience", "Projects", "Contact"];
 
 
 function SectionTitle({ label, title, text }) {
@@ -70,7 +74,13 @@ export default function App() {
               <div className="relative rounded-[1.7rem] border border-white/10 bg-[#101922]/90 p-6 shadow-2xl backdrop-blur">
                 <div className="flex items-center justify-between border-b border-white/10 pb-5 text-[10px] tracking-[.16em] text-slate-500"><span>PORTFOLIO / PROFILE</span><span className="text-mint">● AVAILABLE</span></div>
                 <div className="section-grid my-8 flex aspect-square items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-mint/10 to-blue-500/5">
-                  <div className="flex h-36 w-36 items-center justify-center rounded-full border border-mint/30 bg-[#0b171b] font-display text-5xl font-bold tracking-tighter text-white shadow-[0_0_70px_rgba(112,226,198,.12)]">JC<span className="text-mint">.</span></div>
+                  <div className="flex h-36 w-36 items-center justify-center rounded-full border border-mint/30 bg-[#0b171b] font-display text-5xl font-bold tracking-tighter text-white shadow-[0_0_70px_rgba(112,226,198,.12)]">
+                    <img
+                      src={profilepic}
+                      alt="Description of the image"
+                      className="h-full w-full object-cover flex-shrink-0 rounded-full"
+                    />
+                  </div>
                 </div>
                 <h2 className="font-display text-2xl font-semibold text-white">John Amiel Capistrano</h2>
                 <p className="mt-2 text-sm text-slate-400">Front-End Developer · Web & Mobile</p>
@@ -110,17 +120,24 @@ export default function App() {
           </div>
         </section>
 
+
         <section id="projects" className="mx-auto max-w-6xl px-5 py-24 sm:px-8">
-          <SectionTitle label="03 / FEATURED PROJECTS" title="Selected front-end work." text="A showcase for web applications, responsive layouts, and mobile-first interfaces. Replace these starter cards with your actual projects and repository links." />
+            <SectionTitle label="03 / EXPERIENCE" title="Where I've worked." text="A look at my professional journey and the roles I've held." />
+              <ExperienceSection />
+        </section>
+
+        <section id="projects" className="mx-auto max-w-6xl px-5 py-24 sm:px-8">
+          <SectionTitle label="04 / FEATURED PROJECTS" title="Selected front-end work." text="A showcase for web applications, responsive layouts, and mobile-first interfaces. Replace these starter cards with your actual projects and repository links." />
           <div className="grid gap-5 lg:grid-cols-3">{projects.map(project => <ProjectCard key={project.number} project={project} />)}</div>
           <p className="mt-6 text-xs leading-6 text-slate-500">Project cards are starter examples, not claims of completed client work. Add screenshots, live demos, and GitHub links for projects you have personally built.</p>
         </section>
+
 
         <section id="contact" className="border-t border-white/5 bg-[#0c131a]">
           <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8">
             <div className="rounded-3xl border border-mint/20 bg-gradient-to-br from-mint/10 via-[#101922] to-[#101922] p-8 sm:p-12 lg:flex lg:items-center lg:justify-between lg:gap-10">
               <div className="max-w-2xl">
-                <p className="text-xs font-bold tracking-[.2em] text-mint">04 / GET IN TOUCH</p>
+                <p className="text-xs font-bold tracking-[.2em] text-mint">05 / GET IN TOUCH</p>
                 <h2 className="mt-5 font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">Have a project in mind?</h2>
                 <p className="mt-5 max-w-xl text-sm leading-8 text-slate-400">I’m open to front-end development opportunities and collaborations involving responsive websites, web applications, and mobile-friendly interfaces.</p>
               </div>

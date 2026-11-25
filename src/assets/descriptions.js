@@ -2,6 +2,7 @@ import {
   MonitorSmartphone, Smartphone, PanelsTopLeft, Code2, Layers3, Sparkles
 } from "lucide-react";
 
+//** Skills Details */
 const skills = [
   { icon: PanelsTopLeft, name: "Front-End Development", description: "Building responsive, accessible, and user-friendly web interfaces." },
   { icon: MonitorSmartphone, name: "Responsive Web Design", description: "Creating layouts that adapt smoothly across desktop, tablet, and mobile." },
@@ -11,7 +12,7 @@ const skills = [
   { icon: Sparkles, name: "Modern CSS & Tailwind", description: "Styling interfaces with utility-first CSS, clean structure, and maintainable patterns." },
 ];
 
-
+//** Project Details */
 const projects = [
   {
     number: "01", category: "MOBILE APPLICATION", title: "Home Service Mobile App Concept",
@@ -47,5 +48,75 @@ const projects = [
   },
 ];
 
+//** Experience Details */
+const experiences = [
+  {
+    role: "Analyst Programmer",
+    company: "WPH Technologies Inc.",
+    period: "2023 - 2024",
+    location: "Singapore/Remote",
+    Status: "Part-time",
+    points: [
+      "Maintained and updated existing web applications, ensuring compatibility with the latest browsers and devices.",
+      "Improved page load performance and accessibility across key pages.",
+      "Discovered and implemented new technologies to enhance the development process and improve user experience.",
+    ],
+    tech: ["React.js", "Tailwind CSS", "JavaScript", "HTML", "CSS", "Power Apps", "REST APIs"],
+  },
+  {
+    role: "Front-End Developer",
+    company: "HelixPay",
+    period: "2021 - 2023",
+    location: "Makati City, Philippines",
+    Status: "Full-time",
+    points: [
+      "Maintained and updated existing web applications, ensuring compatibility with the latest browsers and devices.",
+      "Improved page load performance and accessibility across key pages.",
+      "Collaborated with designers and backend developers to implement new features and improve user experience.",
+    ],
+    tech: ["JavaScript", "HTML", "CSS", "React.js", "Tailwind CSS", "Vue.js", "GitLab"],
+  },
+  {
+    role: "Mobile Application Developer",
+    company: "Goodwork Philippines",
+    period: "2019 - 2021",
+    location: "Makati City, Philippines",
+    Status: "Full-time",
+    points: [
+      "Developed cross-platform mobile applications using React Native.",
+      "Created and maintained mobile applications for both iOS and Android platforms.",
+      "Collaborated with designers and backend developers to implement new features and improve user experience.",
+    ],
+    tech: ["React Native", "JavaScript", "HTML", "CSS", "Redux", "XCode", "TestFlight"],
+  },
+  {
+    role: "Mobile Application Developer",
+    company: "Mango Tours",
+    period: "2017 - 2019",
+    location: "Makati City, Philippines",
+    Status: "Full-time",
+    points: [
+      "Developed cross-platform mobile applications using Swift & React Native.",
+      "Maintained and updated existing mobile applications, ensuring compatibility with the latest OS versions.",
+      "Worked closely with the design team to implement new features and improve user experience.",
+    ],
+    tech: ["React Native", "JavaScript", "HTML", "CSS", "XCode", "TestFlight", "Swift"],
+  },
+  {
+    role: "Junior Network Engineer",
+    company: "Imaginet Inc.",
+    period: "2016 - 2017",
+    location: "Makati City, Philippines",
+    Status: "Full-time",
+    points: [
+      "Configured and maintained network infrastructure, ensuring optimal performance and security.",
+      "Troubleshot network issues and implemented solutions to minimize downtime.",
+      "Collaborated with team members to design and implement new network solutions.",
+    ],
+    tech: ["Cisco", "Microsoft", "Linux", "Windows", "Firewall", "VPN", "Networking Protocols"],
+  },
+];
 
-export { skills, projects };
+
+
+export { skills, projects, experiences };
